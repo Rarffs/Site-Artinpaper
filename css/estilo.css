@@ -1,0 +1,237 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+body {
+    padding-top: 80px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.bgparallax { 
+    /* background com efeito parallax */
+    background-image: url("../imgs/bgteste.jpg");
+    /* Set a specific height */
+     min-height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgparallax2 { 
+    /* background com efeito parallax */
+    background-image: url("../imgs/bgteste2.jpg");
+    /* Set a specific height */
+    min-height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divslider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../imgs/papel.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Caso a tela seja muito pequana o efeito parallax é removido */
+@media (max-width: 500px) {
+    .bgparallax {
+        background: black;
+        background-attachment: inherit;
+    }
+    
+    .bgparallax2 {
+        background-image: url("../imgs/intro-bg.jpg");
+        background-attachment: inherit;
+    }
+    
+    .divslider {
+        background-image: url("../imgs/papel.jpg");
+        background-attachment: inherit;
+    }
+}
+
+.navbar-padding {
+    padding: 0px;
+    padding-right: 5px;
+}
+
+
+nav.navbar{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom:15px;
+    border: none;
+   // Animation
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+
+nav.navbar.shrink {
+    min-height: 35px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.section_interna {
+    padding-top: 0px;
+}
+
+section#contato {
+    min-height: 80vh;
+    
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background: black;
+    color: white;
+}
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+
+
+.servico-item * {
+    text-align: center;
+}
+.servico-item h4 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.servicos-item_todososservicos {
+    margin-top: 60px;
+    
+}
+
+
+.portfolio-item p {
+    color: black;
+    
+}
+
+.portfolio-item h4 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.produto-item {
+    background: white;
+    
+}
+
+.produto-item h4 {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.portfolio-row {
+    margin-bottom: 20px;
+    
+}
+
+.portfolio-row:last-child {
+    margin-bottom: 0px;
+    
+}
+
+.contato textarea {
+    height: 150px;
+    
+}
+
+.contato .aviso {
+    padding: 15px;
+    color: black;
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: maroon;
+  border: 1px solid darkred;
+  background-color: salmon;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: salmon;
+  border: 1px solid maroon;
+  outline: none;
+  background-color: maroon;
+}
+
+.btn-warning {
+  color: snow;
+  border: 1px solid darkorange;
+  background-color: darkorange;
+}
+
+.btn-warning:focus, .btn-warning:hover {
+  color: snow;
+  border: 1px solid orangered;
+  outline: none;
+  background-color: orangered;
+}
+
+.btn-primary {
+  color: darkturquoise;
+  border: 1px solid LightBlue;
+  background-color: LightBlue;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  color: snow;
+  border: 1px solid darkturquoise;
+  outline: none;
+  background-color: darkturquoise;
+}
+
